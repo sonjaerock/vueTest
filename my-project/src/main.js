@@ -97,5 +97,12 @@ new Vue({
       { name: 'bale', age: 12 },
       { name: 'maldiny', age: 10 }
     ]
+  },
+  filters: {
+    capitalize: function (value) {
+      if (!value) return ''
+      value = value.toString()
+      return value.toUpperCase()
+    }
   }
 })

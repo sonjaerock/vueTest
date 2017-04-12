@@ -10,8 +10,8 @@
     <br>
     <!-- ex01) 문자열 출력  -->
     <div id="app2">
-      <p>{{ message | test }}</p>
-      <p>{{ test | capitalize }}</p>
+      <p>{{ message }}</p>
+      <p>{{ test }}</p>
     </div>
 
     <!-- ex02) 동적으로 바인딩 하기  -->
@@ -62,7 +62,6 @@
     </div>
 
     <!-- ex08) 필터 써보기 -->
-
     <table id="app-8" class="table table-striped">
       <thead>
         <tr>
@@ -73,9 +72,10 @@
       <tbody>
         <tr v-for="obj in people">
           <td>{{ obj.name }}</td>
-          <td>{{ obj.age | orderBy 'obj.age' true }}</td>
+          <td>{{ obj.age }}</td>
         </tr>
       </tbody>
+
     </table>
 
 
