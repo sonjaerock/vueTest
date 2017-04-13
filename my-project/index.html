@@ -71,13 +71,17 @@
       </thead>
       <tbody>
         <tr v-for="obj in people">
-          <td>{{ obj.name }}</td>
+          <td>{{ obj.name | capitalize }}</td>
           <td>{{ obj.age }}</td>
         </tr>
       </tbody>
-
     </table>
 
+    <!-- ex09) 계산된 속성을 써보기 -->
+    <div id="app-9">
+      <p>원본 메시지: "{{ message }}"</p>
+      <p>뒤집히도록 계산된 메시지: "{{ reversedMessage }}"</p>
+    </div>
 
     <script type="/src/main.js"></script>
     <script src="/build/build.js"></script>

@@ -106,3 +106,17 @@ new Vue({
     }
   }
 })
+
+new Vue({
+  el: '#app-9',
+  data: {
+    message: '계산된 속성을 활용하자'
+  },
+  computed: {
+    // 계산된 getter
+    reversedMessage: function () {
+      // `this` 는 vm 인스턴스를 가리킵니다.
+      return this.message.split('').reverse().join('')
+    }
+  }
+})
