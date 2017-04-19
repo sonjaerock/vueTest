@@ -65,8 +65,8 @@
     <table id="app-8" class="table table-striped">
       <thead>
         <tr>
-          <th><a href="#">Name</a></th>
-          <th><a href="#">Age</a></th>
+          <th><a href="#">미터</a></th>
+          <th><a href="#">야드</a></th>
         </tr>
       </thead>
       <tbody>
@@ -83,7 +83,27 @@
       <p>뒤집히도록 계산된 메시지: "{{ reversedMessage }}"</p>
     </div>
 
+    <!-- ex10) 감시된 속성을 써보기 -->
+    <div id="app-10">
+      {{ fullName }}
+    </div>
+
+    <!-- ex11) 계산된 속성을 더 써보기 -->
+    <div id="app-11">
+      {{ fullName }}
+    </div>
+
+    <!-- ex12) 감시된 속성을 더 써보기 -->
+    <div id="app-12">
+      <p>
+        yes/no 질문을 물어보세요:
+        <input v-model="question">
+      </p>
+      <p>{{ answer }}</p>
+    </div>
+
     <script type="/src/main.js"></script>
     <script src="/build/build.js"></script>
+
   </body>
 </html>
